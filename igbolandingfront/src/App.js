@@ -8,9 +8,10 @@ import { ethers } from 'ethers'
 // Constants
 const TWITTER_HANDLE = 'Yehana01';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
-const PIXXITI_LINK  = 'https:';
+const PIXXITI_LINK  = 'https://testnets.opensea.io/collection/igbolandingnft-1';
 // const CONTRACT_ADDRESS = "0xeDE07330860B19E442983742186eca0C8eF3e399"; // ALCHEMY
-const CONTRACT_ADDRESS = "0x465342e9C46f3689fad6154327577C1b7B603b31"; // QUICK_NODE
+// const CONTRACT_ADDRESS = "0x465342e9C46f3689fad6154327577C1b7B603b31"; // QUICK_NODE
+const CONTRACT_ADDRESS ="0x48aDaC4Fc32483185a51091f2898C42400AF4754"; //new Alchemy 
 const goerliChainId = "0x5";
 
 const App = () => {
