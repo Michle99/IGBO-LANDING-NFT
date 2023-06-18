@@ -29,7 +29,7 @@ const App = () => {
     const checkIfWalletIsConnected = async () => {
   
       /*
-      * First make sure we have access to window.ethereum
+      * First make sure we have access to wirrendow.ethereum
       */
       const { ethereum } = window;
   
