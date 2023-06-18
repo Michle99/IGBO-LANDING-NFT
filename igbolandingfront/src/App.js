@@ -2,16 +2,16 @@ import './styles/App.css';
 import twitterLogo from './assets/twitter-logo.svg';
 import React, { useEffect, useState } from "react";
 import IgboLandingNFT from "./utils/IgboLandingNFT.json";
-import { ethers } from 'ethers'
+import { ethers } from 'ethers';
 
 
 // Constants
 const TWITTER_HANDLE = 'Yehana01';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
-const PIXXITI_LINK  = 'https://testnets.opensea.io/collection/igbolandingnft-1';
+const OPENSEA_LINK  = 'https://testnets.opensea.io/collection/igbolandingnft-1';
+
 // const CONTRACT_ADDRESS = "0xeDE07330860B19E442983742186eca0C8eF3e399"; // ALCHEMY
-// const CONTRACT_ADDRESS = "0x465342e9C46f3689fad6154327577C1b7B603b31"; // QUICK_NODE
-const CONTRACT_ADDRESS ="0x48aDaC4Fc32483185a51091f2898C42400AF4754"; //new Alchemy 
+const CONTRACT_ADDRESS = "0x75c1B12BFb5D95F7C21906E7230Da3311eebf5c5"; // ALCHEMY
 const goerliChainId = "0x5";
 
 const App = () => {
@@ -232,7 +232,7 @@ const App = () => {
               </>
             )}
   
-            {!correctNetwork && <p className="sub-text">** You are in a wrong network. Please, switch to Rinkeby **</p>}
+            {!correctNetwork && <p className="sub-text">** You are in a wrong network. Please, switch to Goerli **</p>}
           </div>
           <div>
             {transactionUrl && <a
@@ -243,7 +243,7 @@ const App = () => {
             >See transaction URL in goerli.etherscan.io</a>}
           </div>
           <div>
-            🌊 <a className="footer-text" href={PIXXITI_LINK} target="_blank" rel="noreferrer">View Collection on Pixxxiti</a>
+            🌊 <a className="footer-text" href={OPENSEA_LINK} target="_blank" rel="noreferrer">View Collection on Opensea</a>
           </div>
           <div className="footer-container">
             <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
